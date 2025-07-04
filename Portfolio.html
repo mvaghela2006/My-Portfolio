@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Thakor Manisha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <h1>Manisha</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- M@ni$h@2006 -->
+  <!-- https://www.youtube.com/watch?v=YgDRW4RakaY&t=2m17s&feature=youtu.be -->
+   <!-- Your ID # is: 910709193436 -->
+
+  <section class="home" id="home">
+     <canvas id="bubbleCanvas"></canvas>
+    <div class="text-box">
+      <h1>Thakor Manisha</h1>
+      <h2>I'm a <span class="auto-type"></span></h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet libero suscipit expedita voluptates recusandae nobis, doloremque maiores nisi, odit aut cumque porro a id ratione harum veritatis officia soluta? Itaque!</p>
+      <p>Creative and detail-oriented web designer from Mehsana, India. Passionate about crafting seamless user
+        experiences and enhancing frontend design using HTML, CSS, JavaScript, Figma, and more. Currently undergoing
+        UI/UX Industrial Training at TCP India.</p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/manisha-thakor-1635aa330" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <!-- <a href="mailto:mani16thakor@gmail.com" ><i class="fas fa-envelope"></i></a> -->
+         <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=mani16thakor@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/mvaghela2006" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/uiux.manisha01" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <div class="btn-box">
+        <a href="#projects" class="btn"><i class="fas fa-briefcase mx-1 p-0"></i> View Projects</a>
+        <a href="#contact" class="btn"><i class="fas fa-envelope-open-text mx-1 p-0"></i> Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Responsive Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="#home" class="nav-item active">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#services" class="nav-item">
+      <i class="fas fa-cogs"></i>
+      <span>Services</span>
+    </a>
+    <a href="#skills" class="nav-item">
+      <i class="fas fa-chart-bar"></i>
+      <span>Skills</span>
+    </a>
+    <a href="#resume" class="nav-item">
+      <i class="fas fa-file-alt"></i>
+      <span>Resume</span>
+    </a>
+    <a href="#projects" class="nav-item">
+      <i class="fas fa-video"></i>
+      <span>Projects</span>
+    </a>
+    <a href="#contact" class="nav-item">
+      <i class="fas fa-comment-alt"></i>
+      <span>Contact</span>
+    </a>
+  </div>
+
+
+  <!----------------Service secion code--------------->
+
+  <section class="services-section" id="services">
+    <h1 class="sub-title1">My <span>Services</span></h1>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Web Design</h3>
+        <p>Responsive and modern websites using HTML, CSS & Bootstrap.</p>
+        <a href="#" class="hire-btn" data-bs-toggle="modal" data-bs-target="#hireModal">Hire Me</a>
+      </div>
+      <div class="service-card">
+        <i class="fab fa-figma"></i>
+        <h3>Prototyping Design</h3>
+        <p>Prototyping interfaces and wireframes using Figma.</p>
+        <a href="#" class="hire-btn" data-bs-toggle="modal" data-bs-target="#hireModal">Hire Me</a>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-magic"></i>
+        <h3>jQuery Effects</h3>
+        <p>Interactive animations and smooth transitions with jQuery.</p>
+        <a href="#" class="hire-btn" data-bs-toggle="modal" data-bs-target="#hireModal">Hire Me</a>
+
+      </div>
+      <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Responsive Layouts</h3>
+        <p>Mobile-first layouts that look great on every device.</p>
+        <a href="#" class="hire-btn" data-bs-toggle="modal" data-bs-target="#hireModal">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Modal -->
+  <!-- Hire Me Modal -->
+  <div class="modal fade" id="hireModal" tabindex="-1" aria-labelledby="hireModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form id="hireForm">
+          <div class="modal-header">
+            <h5 class="modal-title" id="hireModalLabel">Hire Me</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="hireEmail" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="hireEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="hirePhone" class="form-label">Contact Number</label>
+              <input type="tel" class="form-control" id="hirePhone" required>
+            </div>
+            <div class="mb-3">
+              <label for="hireReason" class="form-label">What service do you need?</label>
+              <textarea class="form-control" id="hireReason" rows="3" placeholder="E.g. Web Design, UI Prototype..."
+                required></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ===== Skills Section ===== -->
+  <section class="skills-section" id="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fa-solid fa-diagram-project skill-icon"></i>
+        <h3>SDLC</h3>
+        <p>Understanding of software development life cycle and workflow structure.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-figma skill-icon"></i>
+        <h3>Figma</h3>
+        <p>Proficient in creating modern UI/UX wireframes and interactive prototypes.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-html5 skill-icon"></i>
+        <h3>HTML5</h3>
+        <p>Semantic markup with best practices for structure and accessibility.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-css3-alt skill-icon"></i>
+        <h3>CSS3</h3>
+        <p>Responsive design, animations, and layout techniques.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-bootstrap skill-icon"></i>
+        <h3>Bootstrap</h3>
+        <p>Building responsive, mobile-first interfaces efficiently.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-js skill-icon"></i>
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, interactivity, and client-side logic.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-jira skill-icon"></i>
+        <h3>Jira</h3>
+        <p>Project and issue tracking tool for agile workflows.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-js-square skill-icon"></i>
+        <h3>jQuery</h3>
+        <p>Simplifies DOM manipulation, events, and animations.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-github skill-icon"></i>
+        <h3>GitHub</h3>
+        <p>Version control and collaboration platform using Git.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-angular skill-icon"></i>
+        <h3>Angular</h3>
+        <p>Building scalable single-page applications (SPAs).</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-sass skill-icon"></i>
+        <h3>SCSS</h3>
+        <p>CSS preprocessor for cleaner, reusable styles and variables.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-aws skill-icon"></i>
+        <h3>AWS</h3>
+        <p>Basic understanding of cloud deployment and services.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------- =========Resume section======== ------>
+
+
+  <section id="resume" class="resume section">
+    <div class="section-title">
+      <h2>Resume</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
+
+    <div class="container">
+      <div class="col">
+        <h3 class="resume-title">Summary</h3>
+        <div class="resume-item pb-0">
+          <h4>Thakor Manisha</h4>
+          <p><em>To leverage my skills and problem-solving abilities to contribute effectively to a design team,
+              enhancing user experience for customers and achieving excellence within the organization.</em></p>
+          <ul class="contact">
+            <li>Mehsana, India</li>
+            <li>9662742798</li>
+            <li>mani16thakor@gmail.com</li>
+            <li><a href="https://www.linkedin.com/in/manisha-thakor-1635aa330" target="_blank">LinkedIn
+                Profile</a></li>
+          </ul>
+        </div>
+
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>UI/UX Industrial Training</h4>
+          <h5>2023 - Running</h5>
+          <p><em>TCP India, Mehsana</em></p>
+        </div>
+        <div class="resume-item">
+          <h4>12 - Arts</h4>
+          <h5>2022</h5>
+          <p><em>T.K. Vidyalaya, Bhandu</em></p>
+        </div>
+      </div>
+
+      <div class="col">
+        <h3 class="resume-title">Skills</h3>
+        <div class="resume-item">
+          <ul>
+            <li>SDLC</li>
+            <li>Figma (Prototyping)</li>
+            <li>GitHub (Version Control)</li>
+            <li>Jira (Project Management)</li>
+            <li>HTML, CSS, Bootstrap, jQuery, JavaScript, Angular, AWS</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+
+        <h3 class="resume-title">Projects</h3>
+        <div class="resume-item">
+          <h4>Figma Projects (Practice)</h4>
+          <ul>
+            <li>Website design</li>
+            <li>E-commerce website design in Figma</li>
+            <li>Mobile app design for education in Figma</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h4>Website Design</h4>
+          <ul>
+            <li>E-commerce website template (HTML, CSS - responsive)</li>
+            <li><a href="https://electricscooterwebsite.onrender.com" target="_blank">Bicycle store website (HTML, CSS,
+                jQuery)</a></li>
+            <li><a href="https://website1demo.onrender.com" target="_blank">Love Nature (HTML, CSS, Javascript -
+                responsive)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects-section" id="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="images/1.png" alt="Bicycle Store Website">
+        <div class="project-info">
+          <h3>Bicycle Store Website</h3>
+          <p>Responsive layout built with HTML, CSS, and jQuery animations.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/2.png" alt="E-commerce Template">
+        <div class="project-info">
+          <h3>E-commerce Template</h3>
+          <p>Clean UI/UX layout for online shopping built using HTML & CSS only.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/3.png" alt="UI Designs in Figma">
+        <div class="project-info">
+          <h3>UI Designs in Figma</h3>
+          <p>Multiple layout practice designs focusing on spacing and structure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------Contact section----------------------->
+
+  <section class="container contact-section">
+    <div class="contact-text">
+      <h2>Contact Me</h2>
+      <p>Let’s collaborate! Feel free to drop a message for freelance work, project ideas, or just to connect.</p>
+      <div class="info"><i class="fas fa-envelope"></i> manisha@example.com</div>
+      <div class="info"><i class="fas fa-phone-alt"></i> +91 98765 43210</div>
+      <div class="info"><i class="fas fa-map-marker-alt"></i> Mehsana, Gujarat, India</div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+  <!-----------Footer section code------------------>
+
+  <footer id="contact">
+    <p>© 2025 Thakor Manisha – All rights reserved</p>
+    <div class="socials">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="mailto:mani16thakor@gmail.com">Email</a>
+    </div>
+  </footer>
+
+
+  <!-- Typed.js and Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    const typed = new Typed(".auto-type", {
+      strings: ["Web Designer", "Frontend Developer", "UI/UX Designer"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+
+
+    document.getElementById("hireForm").addEventListener("submit", function (e) {
+      e.preventDefault(); 
+      alert("Thank you! Your request has been sent.");
+      const modal = bootstrap.Modal.getInstance(document.getElementById('hireModal'));
+      modal.hide(); 
+      this.reset(); 
+    });
+
+
+
+    /* responsive header javascript*/
+    const navItems = document.querySelectorAll('.bottom-nav .nav-item');
+
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
+
+
+/*     Bubble verson javascript     */
+
+   const canvas = document.getElementById("bubbleCanvas");
+const ctx = canvas.getContext("2d");
+let bubbles = [];
+
+// Resize canvas to match the .home section
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = document.querySelector(".home").offsetHeight;
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+function getRandomColor() {
+  const colors = ["#ff6b6b", "#feca57", "#48dbfb", "#1dd1a1", "#5f27cd", "#ff9ff3"];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+// Use document instead of canvas for mousemove
+document.addEventListener("mousemove", (e) => {
+  const rect = canvas.getBoundingClientRect(); 
+  const mouseX = e.clientX - rect.left;
+  const mouseY = e.clientY - rect.top;
+
+  for (let i = 0; i < 5; i++) {
+    bubbles.push({
+      x: mouseX,
+      y: mouseY,
+      radius: Math.random() * 6 + 2,
+      dx: (Math.random() - 0.5) * 2,
+      dy: (Math.random() - 0.5) * 2,
+      alpha: 1,
+      color: getRandomColor()
+    });
+  }
+});
+
+function hexToRgba(hex, alpha) {
+  const bigint = parseInt(hex.slice(1), 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  bubbles.forEach((bubble, index) => {
+    bubble.x += bubble.dx;
+    bubble.y += bubble.dy;
+    bubble.alpha -= 0.01;
+
+    ctx.beginPath();
+    ctx.arc(bubble.x, bubble.y, bubble.radius, 0, Math.PI * 2);
+    ctx.fillStyle = hexToRgba(bubble.color, bubble.alpha);
+    ctx.fill();
+
+    if (bubble.alpha <= 0) {
+      bubbles.splice(index, 1);
+    }
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+
+  </script>
+
+</body>
+
+</html>
